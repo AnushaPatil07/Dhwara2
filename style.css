@@ -1,0 +1,157 @@
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    padding:15px 40px;
+    background:#222;
+    color:white;
+    align-items:center;
+}
+
+.navbar a{
+    color:white;
+    margin:0 10px;
+    text-decoration:none;
+}
+
+.hero{
+    height:90vh;
+    background:url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab') center/cover no-repeat;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.hero-overlay{
+    background:rgba(0,0,0,0.6);
+    padding:40px;
+    text-align:center;
+}
+
+.section{
+    padding:60px 40px;
+    text-align:center;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    padding:20px;
+    background:#f4f4f4;
+    border-radius:8px;
+}
+
+.small-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
+    margin-top:20px;
+}
+
+.small-card{
+    background:white;
+    padding:10px;
+    border-radius:8px;
+    text-align:center;
+    box-shadow:0 2px 6px rgba(0,0,0,0.08);
+    transition:0.3s;
+    font-size:14px;
+}
+
+.small-card img{
+    width:100%;
+    height:100px;
+    object-fit:cover;
+    border-radius:6px;
+    margin-bottom:5px;
+}
+
+.small-card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+.city-card{
+    cursor:pointer;
+    font-weight:600;
+}
+
+.city-card:hover{
+    background:#2b6df6;
+    color:white;
+}
+
+.city-projects{
+    margin-top:40px;
+    text-align:left;
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.dark{
+    background:#222;
+    color:white;
+}
+
+/* Testimonials Fix */
+.section.dark .card{
+    background:white;
+    color:black;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.footer-container{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.details-container img{
+    width:100%;
+    max-width:600px;
+    border-radius:10px;
+    margin-bottom:20px;
+}
+
+.profile-container{
+    display:flex;
+    gap:40px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.profile-left{
+    width:30%;
+    text-align:center;
+}
+
+.profile-left img{
+    width:100%;
+    border-radius:10px;
+}
+
+.profile-right{
+    width:70%;
+}
+
+.section.dark .card{
+    background:white;
+    color:black;
+}
